@@ -1,0 +1,6 @@
+{
+    "/Bibz/" : {
+        "target" : "https://localhost:8090",
+        "secure" : false
+    }
+}

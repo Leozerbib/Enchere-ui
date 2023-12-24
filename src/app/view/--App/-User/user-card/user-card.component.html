@@ -1,0 +1,17 @@
+
+
+
+<a routerLink="User" [username]="userdto.username" style="text-decoration: none; color: black;" onmouseover="this.style.color ='red'" onmouseout="this.style.color ='black'">
+<div class="container-fluid h-100 mask rgba-red-strong" style="height: 100%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;padding: 0;">
+    <div class="row h-100" style="width:100%; flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: center;align-items: center;padding: 0;">
+        <div class="col-sm-3 g-2" style="    display: flex;aspect-ratio: 1/1;width: 20%;padding: 2%;justify-content: center;align-items: center;flex-wrap: nowrap;">
+            <img src={{userdto.icon}} class="h-100 rounded-circle bg-light border border-warning"  alt="">
+        </div>
+        <div class="col-sm-9 h-100 .text-success" style=" display: flex;flex-wrap: nowrap;align-content: center;align-items: center; justify-content: center;">
+            {{userdto.username}} #{{userdto.id}} 
+        </div>
+    </div>
+</div>
+</a>
+
+

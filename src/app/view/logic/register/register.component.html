@@ -1,0 +1,36 @@
+
+<div class="container wt-4">
+    <div class="card">
+        <h1>User Register</h1>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" [(ngModel)]="names" [ngModelOptions]="{standalone: true}" class="form-control"  id="Name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label >lastName</label>
+            <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}"class="form-control"  id="Lastname" placeholder="Enter Lastame">
+        </div>
+        <div class="form-group">
+            <label >UserName</label>
+            <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}"class="form-control"  id="Username" placeholder="Enter UserName">
+        </div>
+        <div class="form-group">
+            <label >Age</label>
+            <input type="number" [(ngModel)]="age" [ngModelOptions]="{standalone: true}"class="form-control"  id="Age" placeholder="Enter Age">
+        </div>
+        <div class="form-group">
+            <label >Email address</label>
+            <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"class="form-control" id="Email"  placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label >Password</label>
+            <input type="password" [(ngModel)]="passwords" [ngModelOptions]="{standalone: true}"class="form-control" id="Password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary mt-4" (click)="save()">Register</button>
+    </form>
+
+</div>
